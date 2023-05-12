@@ -20,6 +20,10 @@ class Header extends Component {
             </li>
           </ul>
         </div>
+
+        <div className="header__img">
+          <a href="#!"></a>
+        </div>
       </header>
     );
   }

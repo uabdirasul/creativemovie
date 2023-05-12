@@ -25,6 +25,22 @@ header {
   padding: 2rem;
 }
 
+.header__img {
+  height: 55vh;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* change all */
+  transition: 0.15s linear all;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./Assets/last-of-us-wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .header__navbar-brand {
   font-size: 1.5rem;
   color: #fff;
