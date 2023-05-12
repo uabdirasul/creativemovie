@@ -22,7 +22,12 @@ class Header extends Component {
         </div>
 
         <div className="header__img">
-          <a href="#!"></a>
+          <a href="#!">
+            <img
+              src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/play-icon-18-256.png"
+              alt=""
+            />
+          </a>
         </div>
       </header>
     );

@@ -41,6 +41,15 @@ header {
   background-attachment: fixed;
 }
 
+.header__img img {
+  width: 5rem;
+  transition: 0.15s linear width;
+}
+
+.header__img:hover img {
+  width: 6.25rem;
+}
+
 .header__navbar-brand {
   font-size: 1.5rem;
   color: #fff;
