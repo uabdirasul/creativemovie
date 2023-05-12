@@ -26,6 +26,7 @@ header {
 }
 
 .header__img {
+  width: 100%;
   height: 55vh;
   clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
   display: flex;
@@ -39,6 +40,10 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+
+.header__img:hover {
+  background-position: bottom;
 }
 
 .header__img img {
