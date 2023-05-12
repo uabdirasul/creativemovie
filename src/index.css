@@ -34,8 +34,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* change all */
-  transition: 0.15s linear all;
+  transition: 0.15s linear background-position;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./Assets/last-of-us-wallpaper.jpg");
   background-size: cover;
