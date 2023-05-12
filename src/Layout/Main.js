@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Movies from "../Components/Movies";
 
 class Main extends Component {
   constructor(props) {
@@ -9,13 +10,17 @@ class Main extends Component {
   }
 
   componentDidMount() {
-    fetch("http://www.omdbapi.com/?i=tt3896198&apikey=8534e0c0&s=black")
+    fetch("http://www.omdbapi.com/?i=tt3896198&apikey=8534e0c0&s=kung")
       .then((data) => data.json())
       .then((data) => this.setState({ movies: data.Search }));
   }
 
   render() {
-    return <main></main>;
+    return (
+      <main className="container">
+        <Movies movies={this.state.movies} />
+      </main>
+    );
   }
 }
 
