@@ -141,3 +141,42 @@ header {
 .page-footer {
   padding: 1.5rem;
 }
+
+/* SearchBar */
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.search-bar input {
+  width: 15rem;
+  height: 2rem;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #333;
+  padding-left: 1rem;
+}
+
+.search-bar .search-btn {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.radio-toggles {
+  display: flex;
+}
+
+.radio-toggles label {
+  margin-right: 1rem;
+}
+
+.radio-toggles input {
+  margin-right: 0.3rem;
+}
