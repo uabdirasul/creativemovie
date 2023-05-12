@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Movies from "../Components/Movies";
+import SearchBar from "../Components/SearchBar";
 
 class Main extends Component {
   constructor(props) {
@@ -18,6 +19,7 @@ class Main extends Component {
   render() {
     return (
       <main className="container">
+        <SearchBar />
         <Movies movies={this.state.movies} />
       </main>
     );
