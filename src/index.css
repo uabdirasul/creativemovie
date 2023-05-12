@@ -13,6 +13,8 @@ body {
   color: #0e1538;
 }
 
+/* header */
+
 header {
   height: 70vh;
 }
@@ -75,6 +77,8 @@ header {
   margin-left: 1.5rem;
 }
 
+/* main */
+
 .movies {
   display: flex;
   flex-wrap: wrap;
@@ -110,3 +114,5 @@ header {
 .card:hover .card__img img {
   transform: scale(1.1);
 }
+
+/* footer */
