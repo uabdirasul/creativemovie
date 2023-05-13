@@ -7,6 +7,13 @@ class SearchBar extends Component {
       search: "",
     };
   }
+
+  handleText = (e) => {
+    if (e.key === "Enter") {
+      this.props.searchMovies(this.state.search);
+    }
+  };
+
   render() {
     const { search } = this.state;
     return (

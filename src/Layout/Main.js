@@ -16,10 +16,16 @@ class Main extends Component {
       .then((data) => this.setState({ movies: data.Search }));
   }
 
+  searchMovies = (text) => {
+    fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=8534e0c0&s=${text}`)
+      .then((data) => data.json())
+      .then((data) => this.setState({ movies: data.Search }));
+  };
+
   render() {
     return (
       <main className="container">
-        <SearchBar />
+        <SearchBar searchMovies={this.searchMovies} />
         <Movies movies={this.state.movies} />
       </main>
     );
