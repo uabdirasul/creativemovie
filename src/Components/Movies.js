@@ -3,12 +3,16 @@ import Movie from "./Movie";
 
 class Movies extends Component {
   render() {
-    const { movies } = this.props;
+    const { movies = [] } = this.props;
     return (
       <div className="movies">
-        {movies.map((movie) => {
-          return <Movie key={movie.imdbID} {...movie} />;
-        })}
+        {movies.length ? (
+          movies.map((movie) => {
+            return <Movie key={movie.imdbID} {...movie} />;
+          })
+        ) : (
+          <h2>Data is not found</h2>
+        )}
       </div>
     );
   }
