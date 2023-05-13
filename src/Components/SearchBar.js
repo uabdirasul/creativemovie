@@ -24,7 +24,6 @@ class SearchBar extends Component {
                 search: e.target.value,
               })
             }
-            placeholder="Search movie"
           />
           <button className="search-btn" type="submit">
             <span>Search</span>
