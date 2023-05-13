@@ -171,6 +171,7 @@ header {
 .search-btn {
   width: 3em;
   height: 3em;
+  border: none;
 }
 
 .search-bar input:invalid:not(:focus),
